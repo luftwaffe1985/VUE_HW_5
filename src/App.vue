@@ -1,19 +1,34 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
 
-    <ProductDetails />
+    <HeaderComp />
+    <ProjectComp />
+    <FooterComp />
+    <HeaderComp />
+    <BlogComp />
+    <FooterComp />
+    <HeaderComp />
+    <BlogDetailsComp />
+    <FooterComp />
   </div>
 </template>
 
 <script>
 
-import ProductDetails from './components/ProductDetails.vue';
+import BlogComp from './components/BlogComp.vue'
+import HeaderComp from './components/HeaderComp.vue';
+import FooterComp from './components/FooterComp.vue';
+import BlogDetailsComp from './components/blogDetailsComp.vue';
+import ProjectComp from './components/ProjectComp.vue';
 
 export default {
   name: 'App',
   components: {
-    ProductDetails
+    BlogComp,
+    BlogDetailsComp,
+    HeaderComp,
+    FooterComp,
+    ProjectComp
   }
 }
 </script>
